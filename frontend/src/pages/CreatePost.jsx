@@ -12,6 +12,8 @@ const CreatePost = (createPost) => {
     }
     const handleSave = async () =>{
         await createPost(post);
+        navigate('/');
+        alert('post has been created');
     } 
   return (
     <form onSubmit={handleSave}>
