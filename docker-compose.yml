@@ -7,6 +7,9 @@ services:
       - "1500:1500"
     environment:
       NODE_ENV: production
+      DB_USER: myuser
+      DB_PASSWORD: myuserpassword
+      DB_DATABASE: mydatabase
     restart: always
 
   frontend:
